@@ -1,0 +1,81 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\Tayco\Desktop\Projeto\simulation\qsim
+vula
+Z1 If_2UdCK2EHA?JG>SBF[Rl3
+Z2 Vmkiml>74Y<U>7aTG6]Z6T1
+Z3 dC:\Users\Jhon-PC\Desktop\Projeto do cunha\ula de 4 bits\simulation\qsim
+Z4 w1567106551
+Z5 8ula.vo
+Z6 Fula.vo
+L0 31
+Z7 OV;L;10.1d;51
+r1
+31
+Z8 !s90 -work|work|ula.vo|
+Z9 o-work work -O0
+!i10b 1
+Z10 !s100 TgAWU6n21>AkjBL3D?V;I0
+!s85 0
+Z11 !s108 1567106561.180000
+Z12 !s107 ula.vo|
+!s101 -O0
+vula_vlg_check_tst
+!i10b 1
+!s100 9c>VZUkbA]Xo5PCSQFU9;3
+I]alZ[L[MeXTTCz3PzW3WC1
+V^MgRC?UdiHR]o6WW5RS^f3
+R3
+Z13 w1567106546
+Z14 8ula.vt
+Z15 Fula.vt
+L0 61
+R7
+r1
+!s85 0
+31
+Z16 !s108 1567106561.727000
+Z17 !s107 ula.vt|
+Z18 !s90 -work|work|ula.vt|
+!s101 -O0
+R9
+vula_vlg_sample_tst
+!i10b 1
+Z19 !s100 ^mSz8nXC?EQXB5_V:jz;R2
+Z20 IZ1JTP_lA`G=;82Y@8_eY92
+Z21 VN[BVn2]>?LbcHG4iGh<g]1
+R3
+R13
+R14
+R15
+L0 29
+R7
+r1
+!s85 0
+31
+R16
+R17
+R18
+!s101 -O0
+R9
+vula_vlg_vec_tst
+!i10b 1
+!s100 4]Lk6?2G4TQFoF@_USZ^C1
+IgHb=AbfeC>4V9FJ?77TWK3
+Z22 VBSK`iV7TVbh_f_eCb<4Km2
+R3
+R13
+R14
+R15
+L0 1201
+R7
+r1
+!s85 0
+31
+R16
+R17
+R18
+!s101 -O0
+R9

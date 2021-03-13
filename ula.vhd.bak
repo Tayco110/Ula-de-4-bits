@@ -1,0 +1,77 @@
+library IEEE;
+use IEEE.std_logic_1164.all;
+use IEEE.std_logic_unsigned.all;
+
+entity ula is port
+(
+	a,b : in std_logic_vector(1 downto 0);
+	selection : in std_logic_vector(1 downto 0);
+	p1 : out std_logic_vector(6 downto 0);
+	p2 : out std_logic_vector(6 downto 0);
+	p3 : out std_logic_vector(6 downto 0)
+);
+end ula;
+
+architecture hardware of alu is
+begin
+variable c : std_logic_vector(2 downto 0);
+process(a,b,sel,c)
+begin
+		case selection is 
+		
+		when "000" => c <= a + b;
+		when "001" => c <= a - b;
+		when "010" => c <= a and b;
+		when "011" => c <= a or b;
+		when "100" => c <= a xor b;
+		when "101" => c <= not a;
+		when "110" => c <= not b;
+		when "111" => c <= "ZZZZ";
+		
+		end case;
+		
+		case c is
+		
+		when "000" => p1 <= "1111110"
+		when "001" => p1 <= "0110000"
+		when "010" => p1 <= "1111110"
+		when "011" => p1 <= "0110000"
+		when "100" => p1 <= "1111110"
+		when "101" => p1 <= "0110000"
+		when "110" => p1 <= "1111110"
+		when "111" => p1 <= "0110000"
+		
+		end case;
+		
+		case c is
+		
+		when "000" => p2 <= "1111110"
+		when "001" => p2 <= "1111110"
+		when "010" => p2 <= "0110000"
+		when "011" => p2 <= "0110000"
+		when "100" => p2 <= "1111110"
+		when "101" => p2 <= "1111110"
+		when "110" => p2 <= "0110000"
+		when "111" => p2 <= "0110000"
+		
+		end case;
+		
+		case c is
+		
+		when "000" => p3 <= "1111110"
+		when "001" => p3 <= "1111110"
+		when "010" => p3 <= "1111110"
+		when "011" => p3 <= "1111110"
+		when "100" => p3 <= "0110000"
+		when "101" => p3 <= "0110000"
+		when "110" => p3 <= "0110000"
+		when "111" => p3 <= "0110000"
+		
+		end case;
+	
+end process;
+	
+end hardware;
+	
+	
+		
